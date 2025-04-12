@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gimnasio</title>
+    <link rel="stylesheet" href="./styles/index.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <a id="menu-icon" href="./index.html">
+        <img src="./img/dumbbell.png" alt="Logo Gimnasio" />
+        <h1>GYM</h1>
+      </a>
+      <nav id="menu">
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li class="accent-color">Nuestros Planes</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="plans">
+        <h3 class="section-title">Nuestros Planes</h3>
+        <div id="plans-container">
+          <div>
+            <h4>Fit Libre</h4>
+            <p class="accent-color price">$15.000<span class="month">/mes</span></p>
+            <p class="plan-description">Acceso total a las máquinas y la zona de pesas</p>
+            <p>Ideal para quienes prefieren entrenar sin horarios ni clases</p>
+          </div>
+          <div>
+            <h4>Clases Full</h4>
+            <p class="accent-color price">$18.000<span class="month">/mes</span></p>
+            <p class="plan-description">
+              Participá en todas las clases grupales disponibles sin límite
+            </p>
+            <p>Zumba, Spinning, Fuerza, entre otras.</p>
+          </div>
+          <div>
+            <h4>Total Plus</h4>
+            <p class="accent-color price">$22.000<span class="month">/mes</span></p>
+            <p class="plan-description">
+              Clases grupales + acceso completo a máquinas y zonas de cardio
+            </p>
+            <p>También incluye una sesión mensual con entrenador.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="inscription">
+        <h3 class="section-title">Comenzá tu inscripción</h3>
+        <form>
+          <div class="row">
+            <div class="input-container">
+              <label>Nombre</label>
+              <input type="text" placeholder="Nombre" required/>
+            </div class="input-container">
+            <div class="input-container">
+              <llabe>Apellido</llabe>
+              <input type="text" placeholder="Apellido" required/>
+            </div>
+          </div>
+          <div class="input-container">
+            <llabe>Email</llabe>
+            <input type="email" placeholder="Email" required/>
+          </div>
+          <div class="row">
+            <fieldset>
+              <legend>Plan</legend>
+              <div >
+                <input type="radio" id="fit-libre" name="plan" required/>
+                <label for="fit-libre">Fit Libre</label>
+              </div>
+              <div >
+                <input type="radio" id="full" name="plan" required/>
+                <label for="full">Clases Full</label>
+              </div>
+              <div >
+                <input type="radio" id="plus" name="plan" required/>
+                <label for="plus">Total Plus</label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Turno</legend>
+              <div >
+                <input type="radio" id="morning" name="shift" required/>
+                <label for="morning">Mañana (6hs a 12hs)</label>
+              </div>
+              <div >
+                <input type="radio" id="evening" name="shift" required/>
+                <label for="evening">Tarde (12hs a 18hs)</label>
+              </div>
+              <div >
+                <input type="radio" id="night" name="shift" required/>
+                <label for="night">Noche (18hs a 22hs)</label>
+              </div>
+            </fieldset>
+          </div>
+          <p class="disclaimer">Dentro de 48hs te llegará un mail para continuar la inscripción.</p>
+          <button class="btn">Inscribirme</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+          <div class="footer-icon">
+            <img src="./img/dumbbell.png" alt="Logo Gimnasio" />
+            <h4>GYM</h4>
+          </div>
+          <div class="footer-location">
+            <h4>Ubicación</h4>
+            <p>Avenida Ficticia 1234<br>
+               Buenos Aires, Argentina.<br>
+               Lunes a Sábados: 6:00 - 22:00 hs
+            </p>
+          </div>
+      
+          <div class="footer-social">
+            <h4>Nuestras Redes</h4>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">TikTok</a></li>
+            </ul>
+          </div>
+        </div>
+      
+        <p class="footer-note">
+          &copy; 2025 Belén de Amorrortu - UADE
+        </p>
+      </footer>
+  
+  </body>
+</html>
